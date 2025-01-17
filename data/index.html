@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DESL </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script src="highchart_desl.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1> DESL PRAKTIKUM 2024 </h1>
+
+    <br /><br />
+    <label class="headlabel"> INPUT VOLTAGE: </label>
+    <label class="normallabel" id="input_voltage_label"> - </label><br />
+
+    <label class="headlabel"> INPUT CURRENT: </label>
+    <label class="normallabel" id="input_current_label"> - </label><br />
+
+    <label class="headlabel"> OUTPUT VOLTAGE: </label>
+    <label class="normallabel" id="output_voltage_label"> - </label><br />
+
+    <label class="headlabel"> OUTPUT CURRENT: </label>
+    <label class="normallabel" id="output_current_label"> - </label><br />
+
+    <br /><br />
+    <input type="range" min="0" max="2" step="1" value="0" id="stateSlider" onchange="updateSliderValue()">
+    <p id="selectedState">Off</p>
+
+    <br /><br />
+    <div id="chart-temperature" class="container"></div>
+
+</body>
+</html>
